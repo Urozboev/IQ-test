@@ -1,18 +1,21 @@
-import React from 'react';
-import Navbar from './components/navbar/Navbar';
+import MyNavbar from './components/navbar/MyNavbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'antd';
+import './main.scss'
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div>
-      Hello
-      <h6>Vercelga deploy qilindi</h6>
-      <Button type='primary'>Click</Button>
-      <Navbar />
-    </div>
+    <BgContainer>
+      <MyNavbar />
+    </BgContainer>
   )
 }
+
+const BgContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  background: url('images/bg.png') no-repeat center top / cover;
+`
 
 export default App
 
