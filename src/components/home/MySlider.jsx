@@ -28,6 +28,9 @@ function MySlider({ children, slidesNumber, style, rout }) {
                         slidesPerView: 2,
                     },
                     1024: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
                         slidesPerView: slidesNumber,
                     }
                 }}

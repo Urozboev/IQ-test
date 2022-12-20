@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import Box from '../home/Box'
 import { LockOutlined } from '@ant-design/icons'
 import MySlider from '../home/MySlider'
+import Test from '../test/Test'
 
 function Display() {
     return (
         <div className='display'>
+            <Test />
             <DisplayBg>
                 <div className="container">
                     <MySlider
