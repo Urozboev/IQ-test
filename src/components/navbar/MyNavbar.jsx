@@ -27,7 +27,7 @@ function MyNavbar() {
                         >
                             <i className="fas fa-times"></i>
                         </button>
-                        <Link className='nav-link' to="/home">Главная</Link>
+                        <Link className='nav-link' to="/">Главная</Link>
                         <Link className='nav-link' to="/faq">FAQs</Link>
                         <Link className='nav-link' to="/contact">Контакты</Link>
                         <Link className='nav-link' to="/result">Результаты</Link>
