@@ -16,7 +16,7 @@ function SignInComponent() {
 
     const handleInputChanged = (ev) => {
         const name = ev.target.name;
-        const value = name == 'terms_policy' ? ev.target.checked : ev.target.value
+        const value = name === 'terms_policy' ? ev.target.checked : ev.target.value
         setUserSignInInfo({
             ...userSignInInfo,
             [name]: value,
@@ -39,7 +39,7 @@ function SignInComponent() {
 
     useEffect(() => {
         for (const key in userSignInInfo) {
-            if (userSignInInfo[key] != '') {
+            if (userSignInInfo[key] !== '') {
                 setButtonDisabledValue(false)
             } else {
                 setButtonDisabledValue(true)

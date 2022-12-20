@@ -37,7 +37,7 @@ function SignUpComponent() {
         let i = 0;
         for (const key in userSignUpInfo) {
             i++
-            if (userSignUpInfo[key] != '' && i > 3) {
+            if (userSignUpInfo[key] !== '' && i > 3) {
                 setButtonDisabledValue(false)
             }
         }
